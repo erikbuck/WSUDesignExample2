@@ -53,6 +53,7 @@ public:
     
     std::string getString() const;
     
+    /// This is an abstract base class for Commands that operate upon Stored String instances.
     class Command : public WSU::Model::Command {
     private:
         StoredString::p_t m_storedString_p;
@@ -66,24 +67,26 @@ public:
     };
     
     typedef typename WSU::Model::Command::p_t command_p_t;
+    
+    /// Type for Factory Methods. Having a standard type simplifies use of [Factory Methods](https://en.wikipedia.org/wiki/Factory_method_pattern) because the caller need not know any details (like special arguments) about the object(s) created by the Factory Method.
     typedef std::function<command_p_t (p_t storedString_p,
                                        std::string args)> commandFactory_t;
     
 private:
-    typedef std::unordered_map<std::string,
-    StoredString::commandFactory_t> factoryMap_t;
+    typedef std::unordered_map<std::string, StoredString::commandFactory_t> factoryMap_t;
     
+    /// \imp \ref R3_1 In order to recognize commands by their names in a script, it is necessary to be able to lookup commands by name. This function returns a map from name to a Factory that creates instances of the command with that name. See [Factory Design Pattern](https://www.oodesign.com/factory-pattern.html)
     static factoryMap_t& getNameToFactoryMap();
     
 public:
-    /// \imp \ref R3_1 In order to recognize commands by their names in a script, it is necessary to be able to lookup commands by name. THis method provides a mechanism to associate a command Factory with the name of the command. A command Factor Method is an implantation of the [Factory Method Design Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern).
+    /// \imp \ref R3_1 In order to recognize commands by their names in a script, it is necessary to be able to lookup commands by name. This method provides a mechanism to associate a command Factory with the name of the command. A command Factory Method is an implantation of the [Factory Method Design Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern).
     static void registerCommandFactoryWithName(commandFactory_t, std::string name);
     
-    /// \imp \ref R3_1 This is a Factory Method that must be overridden in subclasses
+    /// \imp \ref R3_1 Create a Command instance using the named Factory, stored string, and arguments. The name is a human readable identifier that may be used in scripts. The arguments are [JSON](https://www.json.org/json-en.html) formatted key/value pairs where each key is a string argument name and each value is a JSON value type.
+    /// \ref R3_1_1 As an implementation detail, JSON is chosen as a human readable format .
     static command_p_t makeCommandWithName(std::string name,
                                            p_t storedString_p,
                                            std::string args);
-    
 };
 
 

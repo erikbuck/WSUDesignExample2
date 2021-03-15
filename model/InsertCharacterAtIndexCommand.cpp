@@ -14,7 +14,10 @@
 namespace WSU {
 namespace Model {
 
+/// This class exists to install a Factory for InsertCharacterAtIndexCommand commands. See WSU::Model::Command::FactoryInstaller for related design information.
 struct _InsertCharacterAtIndexCommandFactoryInstaller : public WSU::Model::Command::FactoryInstaller {
+    
+    /// This is the actual Factory Method that produces new instances of InsertCharacterAtIndexCommand
     static StoredString::command_p_t factory(StoredString::p_t storedString_p,
                                              std::string args) {
         auto parsedArgs = parse(args);
@@ -36,13 +39,14 @@ struct _InsertCharacterAtIndexCommandFactoryInstaller : public WSU::Model::Comma
         return result;
     }
     
+    /// This constructor registers factory with StoredString's collection of named factories. See WSU::Model::Command::FactoryInstaller for related design information.
     _InsertCharacterAtIndexCommandFactoryInstaller() {
         StoredString::registerCommandFactoryWithName(factory,
                                                      InsertCharacterAtIndexCommand::name);
     }
 };
 
-// Force registration of factory
+// Force registration of factory: C++ calls constructor before main()
 _InsertCharacterAtIndexCommandFactoryInstaller insertCharacterAtIndexCommandInstaller;
 
 
