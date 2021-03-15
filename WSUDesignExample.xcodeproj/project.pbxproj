@@ -127,20 +127,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03DFA50825FB25F000D6E457 /* StoredString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoredString.cpp; path = DemoLib/StoredString.cpp; sourceTree = "<group>"; };
-		03DFA50925FB25F000D6E457 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Command.cpp; path = DemoLib/Command.cpp; sourceTree = "<group>"; };
+		03DFA50825FB25F000D6E457 /* StoredString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StoredString.cpp; sourceTree = "<group>"; };
+		03DFA50925FB25F000D6E457 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		03DFA50A25FB25F000D6E457 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = DemoLib/README.md; sourceTree = "<group>"; };
-		03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InsertCharacterAtIndexCommand.cpp; path = DemoLib/InsertCharacterAtIndexCommand.cpp; sourceTree = "<group>"; };
-		03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WSUInsertCharacterAtIndexCommandTest.cpp; path = DemoLib/WSUInsertCharacterAtIndexCommandTest.cpp; sourceTree = "<group>"; };
-		03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoredStringTest.cpp; path = DemoLib/StoredStringTest.cpp; sourceTree = "<group>"; };
-		03DFA50E25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = InsertCharacterAtIndexCommand.hpp; path = DemoLib/InsertCharacterAtIndexCommand.hpp; sourceTree = "<group>"; };
-		03DFA50F25FB25F000D6E457 /* StoredString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StoredString.hpp; path = DemoLib/StoredString.hpp; sourceTree = "<group>"; };
-		03DFA51025FB25F000D6E457 /* Command.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Command.hpp; path = DemoLib/Command.hpp; sourceTree = "<group>"; };
+		03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertCharacterAtIndexCommand.cpp; sourceTree = "<group>"; };
+		03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WSUInsertCharacterAtIndexCommandTest.cpp; sourceTree = "<group>"; };
+		03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StoredStringTest.cpp; sourceTree = "<group>"; };
+		03DFA50E25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InsertCharacterAtIndexCommand.hpp; sourceTree = "<group>"; };
+		03DFA50F25FB25F000D6E457 /* StoredString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StoredString.hpp; sourceTree = "<group>"; };
+		03DFA51025FB25F000D6E457 /* Command.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
 		03DFA52C25FB261200D6E457 /* json11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json11.cpp; sourceTree = "<group>"; };
 		03DFA52D25FB261200D6E457 /* json11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json11.hpp; sourceTree = "<group>"; };
-		03F9133525FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RemoveCharacterAtIndexCommand.cpp; path = DemoLib/RemoveCharacterAtIndexCommand.cpp; sourceTree = "<group>"; };
-		03F9133625FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = RemoveCharacterAtIndexCommand.hpp; path = DemoLib/RemoveCharacterAtIndexCommand.hpp; sourceTree = "<group>"; };
-		03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WSURemoveCharacterAtIndexCommandTest.cpp; path = DemoLib/WSURemoveCharacterAtIndexCommandTest.cpp; sourceTree = "<group>"; };
+		03F9133525FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveCharacterAtIndexCommand.cpp; sourceTree = "<group>"; };
+		03F9133625FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RemoveCharacterAtIndexCommand.hpp; sourceTree = "<group>"; };
+		03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WSURemoveCharacterAtIndexCommandTest.cpp; sourceTree = "<group>"; };
 		C9BB83D617E1FDFD008820CF /* libdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdemo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C671B117E0312F00ED64D4 /* standalone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = standalone; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C671B417E0312F00ED64D4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -226,23 +226,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C9BB83DA17E1FE22008820CF /* Demo Library */ = {
+		031F31B625FF98A500A72B8A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				03DFA52C25FB261200D6E457 /* json11.cpp */,
-				03DFA52D25FB261200D6E457 /* json11.hpp */,
 				03DFA50925FB25F000D6E457 /* Command.cpp */,
 				03DFA51025FB25F000D6E457 /* Command.hpp */,
 				03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */,
 				03DFA50E25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp */,
 				03F9133525FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp */,
 				03F9133625FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp */,
-				03DFA50A25FB25F000D6E457 /* README.md */,
 				03DFA50825FB25F000D6E457 /* StoredString.cpp */,
 				03DFA50F25FB25F000D6E457 /* StoredString.hpp */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		031F31C525FF98EB00A72B8A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				03DFA52C25FB261200D6E457 /* json11.cpp */,
+				03DFA52D25FB261200D6E457 /* json11.hpp */,
 				03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */,
 				03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */,
 				03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		C9BB83DA17E1FE22008820CF /* Demo Library */ = {
+			isa = PBXGroup;
+			children = (
+				031F31C525FF98EB00A72B8A /* test */,
+				031F31B625FF98A500A72B8A /* model */,
+				03DFA50A25FB25F000D6E457 /* README.md */,
 			);
 			name = "Demo Library";
 			sourceTree = "<group>";
