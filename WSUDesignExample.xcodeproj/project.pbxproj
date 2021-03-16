@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036A4F962600DED10080B5A3 /* CommandController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 036A4F942600DED10080B5A3 /* CommandController.cpp */; };
+		036A4F972600DED10080B5A3 /* CommandController.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 036A4F952600DED10080B5A3 /* CommandController.hpp */; };
+		036A4FA92600E2E60080B5A3 /* CommandControllerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 036A4FA22600E0790080B5A3 /* CommandControllerTest.cpp */; };
+		036A4FBA2600E5810080B5A3 /* CommandControllerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 036A4FA22600E0790080B5A3 /* CommandControllerTest.cpp */; };
 		03DFA51125FB25F000D6E457 /* StoredString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50825FB25F000D6E457 /* StoredString.cpp */; };
 		03DFA51225FB25F000D6E457 /* StoredString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50825FB25F000D6E457 /* StoredString.cpp */; };
 		03DFA51325FB25F000D6E457 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50925FB25F000D6E457 /* Command.cpp */; };
 		03DFA51425FB25F000D6E457 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50925FB25F000D6E457 /* Command.cpp */; };
 		03DFA51525FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */; };
 		03DFA51625FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */; };
-		03DFA51725FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */; };
 		03DFA51825FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */; };
-		03DFA51925FB25F000D6E457 /* StoredStringTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */; };
 		03DFA51A25FB25F000D6E457 /* StoredStringTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */; };
 		03DFA51B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 03DFA50E25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp */; };
 		03DFA51C25FB25F000D6E457 /* StoredString.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 03DFA50F25FB25F000D6E457 /* StoredString.hpp */; };
@@ -29,7 +31,6 @@
 		03F9133825FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F9133525FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp */; };
 		03F9133925FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F9133525FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp */; };
 		03F9133A25FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 03F9133625FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp */; };
-		03F9134A25FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */; };
 		03F9134B25FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */; };
 		03F9134C25FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */; };
 		C9BB83E617E1FEE0008820CF /* libdemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BB83D617E1FDFD008820CF /* libdemo.a */; };
@@ -93,6 +94,9 @@
 		031F31DF25FF9D2E00A72B8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		031F31E025FF9E7600A72B8A /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		031F31E625FFA53E00A72B8A /* documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = documents; sourceTree = "<group>"; };
+		036A4F942600DED10080B5A3 /* CommandController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandController.cpp; sourceTree = "<group>"; };
+		036A4F952600DED10080B5A3 /* CommandController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CommandController.hpp; sourceTree = "<group>"; };
+		036A4FA22600E0790080B5A3 /* CommandControllerTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandControllerTest.cpp; sourceTree = "<group>"; };
 		03DFA50825FB25F000D6E457 /* StoredString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StoredString.cpp; sourceTree = "<group>"; };
 		03DFA50925FB25F000D6E457 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		03DFA50B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertCharacterAtIndexCommand.cpp; sourceTree = "<group>"; };
@@ -194,13 +198,24 @@
 				03DFA50D25FB25F000D6E457 /* StoredStringTest.cpp */,
 				03DFA50C25FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp */,
 				03F9134925FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp */,
+				036A4FA22600E0790080B5A3 /* CommandControllerTest.cpp */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		036A4F932600DE800080B5A3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				036A4F942600DED10080B5A3 /* CommandController.cpp */,
+				036A4F952600DED10080B5A3 /* CommandController.hpp */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		C9BB83DA17E1FE22008820CF /* Demo Library */ = {
 			isa = PBXGroup;
 			children = (
+				036A4F932600DE800080B5A3 /* controller */,
 				031F31C525FF98EB00A72B8A /* test */,
 				031F31B625FF98A500A72B8A /* model */,
 				031F31DF25FF9D2E00A72B8A /* README.md */,
@@ -306,6 +321,7 @@
 				03DFA53025FB261200D6E457 /* json11.hpp in Headers */,
 				03F9133A25FBB24A00832366 /* RemoveCharacterAtIndexCommand.hpp in Headers */,
 				03DFA51B25FB25F000D6E457 /* InsertCharacterAtIndexCommand.hpp in Headers */,
+				036A4F972600DED10080B5A3 /* CommandController.hpp in Headers */,
 				03DFA51C25FB25F000D6E457 /* StoredString.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,13 +506,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DFA52E25FB261200D6E457 /* json11.cpp in Sources */,
+				036A4F962600DED10080B5A3 /* CommandController.cpp in Sources */,
 				03DFA51525FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp in Sources */,
 				03DFA51325FB25F000D6E457 /* Command.cpp in Sources */,
 				03DFA51125FB25F000D6E457 /* StoredString.cpp in Sources */,
-				03DFA51925FB25F000D6E457 /* StoredStringTest.cpp in Sources */,
 				03F9133725FBB24A00832366 /* RemoveCharacterAtIndexCommand.cpp in Sources */,
-				03DFA51725FB25F000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp in Sources */,
-				03F9134A25FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036A4FA92600E2E60080B5A3 /* CommandControllerTest.cpp in Sources */,
 				03DFA52F25FB261200D6E457 /* json11.cpp in Sources */,
 				03F9134C25FBB9F700832366 /* WSURemoveCharacterAtIndexCommandTest.cpp in Sources */,
 				03DFA51625FB25F000D6E457 /* InsertCharacterAtIndexCommand.cpp in Sources */,
@@ -528,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036A4FBA2600E5810080B5A3 /* CommandControllerTest.cpp in Sources */,
 				03DFA58825FB284000D6E457 /* WSUInsertCharacterAtIndexCommandTest.cpp in Sources */,
 				03DFA58025FB281B00D6E457 /* StoredStringTest.cpp in Sources */,
 				C9C6722017E1876200ED64D4 /* GoogleTests.mm in Sources */,
