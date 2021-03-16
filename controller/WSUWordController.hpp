@@ -26,14 +26,18 @@ public:
     
     WSUWordController();
     
+    std::string getCurrentStoredStringValue();
     UndoManager& getUndoManager();
+    
+    /// \imp \ref R2_0 \ref R2_2
     void runCommandWithUndoRedoSupport(command_p_t);
     
+    /// \imp \ref R3_0
     void runScript(std::string script);
-    std::string getCurrentStoredStringValue();
     
-    command_p_t makeCommandWithName(std::string name,
-                                           std::string args);
+    
+    /// \imp \ref R3_1 This function is a Factory Method used to return Command isntances that are preinitialized to operate upon the stored string encapsulated by the WSUWordController
+    command_p_t makeCommandWithName(std::string name, std::string args);
 };
 
 } // namespace Controller
