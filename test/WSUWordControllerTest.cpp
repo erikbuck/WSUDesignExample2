@@ -18,25 +18,36 @@ TEST(WSUWordController, emptyModel) {
 
 TEST(WSUWordController, runScript0) {
     WSU::Controller::WSUWordController commandController;
-    commandController.runScript("{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}");
+    commandController.runScript(
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}");
     EXPECT_EQ("a", commandController.getCurrentStoredStringValue());
 }
 
 TEST(WSUWordController, runScript1) {
     WSU::Controller::WSUWordController commandController;
-    commandController.runScript("{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}");
+    commandController.runScript(
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}");
     EXPECT_EQ("-a", commandController.getCurrentStoredStringValue());
 }
 
 TEST(WSUWordController, runScript2) {
     WSU::Controller::WSUWordController commandController;
-    commandController.runScript("{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"!\", \"command\": \"insertCharacterAtIndex\", \"index\": 1}");
+    commandController.runScript(
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"!\", \"command\": \"insertCharacterAtIndex\", \"index\": 1}");
     EXPECT_EQ("a!-a", commandController.getCurrentStoredStringValue());
 }
 
 TEST(WSUWordController, runScript3) {
     WSU::Controller::WSUWordController commandController;
-    commandController.runScript("{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}{\"command\": \"removeCharacterAtIndex\", \"index\": 1}");
+    commandController.runScript(
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"-\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"character\": \"a\", \"command\": \"insertCharacterAtIndex\", \"index\": 0}"
+    "{\"command\": \"removeCharacterAtIndex\", \"index\": 1}");
     EXPECT_EQ("aa", commandController.getCurrentStoredStringValue());
 }
 
@@ -61,11 +72,12 @@ TEST(WSUWordController, undo1) {
     commandController.runCommandWithUndoRedoSupport(cmd_p);
     commandController.runCommandWithUndoRedoSupport(cmd_p);
     EXPECT_EQ("----", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().undo();
+    auto undoManager = commandController.getUndoManager();
+    undoManager.undo();
     EXPECT_EQ("---", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().undo();
-    commandController.getUndoManager().undo();
-    commandController.getUndoManager().undo();
+    undoManager.undo();
+    undoManager.undo();
+    undoManager.undo();
     EXPECT_EQ("", commandController.getCurrentStoredStringValue());
 }
 
@@ -78,16 +90,17 @@ TEST(WSUWordController, redo0) {
     commandController.runCommandWithUndoRedoSupport(cmd_p);
     commandController.runCommandWithUndoRedoSupport(cmd_p);
     commandController.runCommandWithUndoRedoSupport(cmd_p);
+    auto undoManager = commandController.getUndoManager();
     EXPECT_EQ("----", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().undo();
+    undoManager.undo();
     EXPECT_EQ("---", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().redo();
+    undoManager.redo();
     EXPECT_EQ("----", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().undo();
-    commandController.getUndoManager().undo();
-    commandController.getUndoManager().undo();
+    undoManager.undo();
+    undoManager.undo();
+    undoManager.undo();
     EXPECT_EQ("-", commandController.getCurrentStoredStringValue());
-    commandController.getUndoManager().redo();
-    commandController.getUndoManager().redo();
+    undoManager.redo();
+    undoManager.redo();
     EXPECT_EQ("---", commandController.getCurrentStoredStringValue());
 }
